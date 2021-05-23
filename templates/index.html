@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Speech Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+    <h2>Tool For Converting Text to Voice and Voice to Text</h2>
+    <div class="links">
+        <a href="{{ url_for('home') }}" class="active ">Convert Speech To Text</a>
+        <a href="{{ url_for('text') }}">Convert Text To Speech</a>
+    </div>
+    <div class="words container">
+    </div>
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+
+</html>
